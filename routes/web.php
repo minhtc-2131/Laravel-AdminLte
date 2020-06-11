@@ -18,10 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get('/admin/login', function () {
-    return view('vendor.auth.login');
+    return view('vendor.adminlte.login');
 });
 
 Route::get('/admin', function () {
-    // dd(1);
     return view('admin.home');
+});
+
+Route::get('/admin/chart', function () {
+    return view('admin.chart');
 });
